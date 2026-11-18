@@ -1,7 +1,8 @@
 # FerroUI website
 
 The website of [FerroUI](https://github.com/wieslawsoltes/FerroUI), a cross-platform UI framework for
-Rust: **https://ferroui.github.io/website/**
+Rust: declarative Rust UI with signals and React-like components, or compiled XAML.
+**https://ferroui.github.io/website/**
 
 A static page: HTML, CSS and plain JavaScript, with no framework, no build step and no third-party
 requests. GitHub Pages publishes it from `main` through `.github/workflows/pages.yml`.
@@ -56,7 +57,7 @@ python3 scripts/check-site.py
 
 ## Screenshots
 
-The screenshots come from the READMEs of FerroUI and of the applications in the
+The screenshots come from the READMEs and the documentation of FerroUI, from the READMEs of the applications in the
 [FerroUI organization](https://github.com/FerroUI), and from the live Control Catalog. Each card links
 to its source repository.
 

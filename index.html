@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
-  <title>FerroUI: cross-platform user interfaces in Rust</title>
-  <meta name="description" content="FerroUI is a cross-platform UI framework for Rust with XAML, a WinUI 3 theme and native platform backends for macOS, Windows, Linux, iOS, Android and the browser.">
+  <title>FerroUI: a cross-platform UI framework for Rust</title>
+  <meta name="description" content="FerroUI is a cross-platform UI framework for Rust: declarative Rust UI with signals and React-like components (rsx!, hooks), or compiled XAML; a complete control library, data binding, themes for five design languages and GPU rendering, on desktop, mobile and the web.">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f3f3f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1c1c1c" media="(prefers-color-scheme: dark)">
@@ -13,14 +13,17 @@
   <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="FerroUI: cross-platform user interfaces in Rust">
-  <meta property="og:description" content="XAML, a WinUI 3 theme and native backends for macOS, Windows, Linux, iOS, Android and the browser.">
+  <meta property="og:title" content="FerroUI: a cross-platform UI framework for Rust">
+  <meta property="og:description" content="Declarative Rust UI with signals and React-like components (rsx!, hooks), or compiled XAML; a complete control library, themes for five design languages and GPU rendering, on macOS, Windows, Linux, iOS, Android and the browser.">
+  <meta property="og:site_name" content="FerroUI">
   <meta property="og:url" content="https://ferroui.github.io/website/">
   <meta property="og:image" content="https://ferroui.github.io/website/assets/img/social-card.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="The FerroUI Control Catalog with the WinUI 3 theme on Windows 11">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FerroUI: a cross-platform UI framework for Rust">
+  <meta name="twitter:description" content="Declarative Rust UI with signals and React-like components (rsx!, hooks), or compiled XAML; a complete control library, themes for five design languages and GPU rendering, on desktop, mobile and the web.">
   <link rel="stylesheet" href="assets/css/site.css">
   <script src="assets/js/config.js"></script>
   <script src="assets/js/site.js" defer></script>
@@ -42,6 +45,13 @@
       <symbol id="i-tools" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="15" rx="2"/><path d="M3 8h18"/><path d="m10 11.5-2.5 2.5 2.5 2.5M14 11.5l2.5 2.5-2.5 2.5"/></g></symbol>
       <symbol id="i-chip" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></g></symbol>
       <symbol id="i-pointer" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3.5 18.5 10l-5.7 1.8L11 17.5 5 3.5Z"/><path d="m13 12 5 5"/></g></symbol>
+      <symbol id="i-signal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2"/><path d="M7 12h3l2-6 3 12 2-6h3"/></g></symbol>
+      <symbol id="i-component" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M6 16v-2h12v2"/></g></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></g></symbol>
+      <symbol id="i-devices" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="14" height="10" rx="1.5"/><path d="M6 18h7M9.5 14v4"/><rect x="16.5" y="9" width="5" height="10" rx="1.2"/></g></symbol>
+      <symbol id="i-pen" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20Z"/><path d="m14 7 3 3"/></g></symbol>
+      <symbol id="i-gauge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 17a8.5 8.5 0 1 1 15 0"/><path d="m12 13 4-4"/><circle cx="12" cy="13" r="1.2"/></g></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></g></symbol>
       <symbol id="i-github" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></symbol>
       <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></g></symbol>
       <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
@@ -65,6 +75,8 @@
       </a>
       <nav class="nav" aria-label="Main" data-open="false">
         <ul class="nav-links" id="nav-links">
+          <li><a href="#declarative">Declarative UI</a></li>
+          <li><a href="#xaml">XAML</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#samples">Samples</a></li>
           <li><a href="#get-started">Get started</a></li>
@@ -96,16 +108,18 @@
             <span class="tag" data-version></span>
             <span>What is new in the release</span>
           </a>
-          <h1 id="hero-title">Cross-platform user interfaces in <span class="accent">Rust</span></h1>
+          <h1 id="hero-title">Declarative, <span class="nowrap">cross-platform</span> UI in <span class="accent">Rust</span></h1>
           <p class="lead">
-            FerroUI is a UI framework for Rust with <strong>XAML</strong>, a <strong>WinUI 3 theme</strong>
-            and native platform backends for macOS, Windows, Linux (X11, Wayland and the framebuffer), iOS,
-            Android and the browser: a retained-mode control library with styled properties, data binding,
-            control themes and a composition renderer.
+            FerroUI is a cross-platform UI framework for Rust. An interface is written in
+            <strong>declarative Rust</strong>: builders for every control, the <code>rsx!</code> macro,
+            fine-grained <strong>signals</strong> and <strong>React-like components</strong> with hooks and a
+            reconciler. It can also be written in <strong>XAML compiled to Rust</strong>. Both drive one
+            control library with data binding, themes for five design languages and GPU rendering, on
+            macOS, Windows, Linux, iOS, Android and the browser.
           </p>
           <div class="hero-actions">
             <a class="btn btn-accent" href="#get-started">Get started <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
-            <a class="btn" href="#samples"><svg aria-hidden="true"><use href="#i-play"></use></svg> Samples</a>
+            <a class="btn" href="#declarative"><svg aria-hidden="true"><use href="#i-rsx"></use></svg> Declarative UI</a>
             <a class="btn" href="https://github.com/wieslawsoltes/FerroUI"><svg aria-hidden="true"><use href="#i-github"></use></svg> GitHub</a>
           </div>
           <ul class="platforms" aria-label="Platforms">
@@ -131,45 +145,308 @@
             <div class="code-head"><span class="file">Cargo.toml</span></div>
 <pre><code data-lang="toml">[dependencies]
 ferroui-base = "={{version}}"
-ferroui-controls = "={{version}}"
-ferroui-desktop = "={{version}}"
-ferroui-themes-winui = "={{version}}"</code></pre>
+
+[dependencies.ferroui-view]
+version = "={{version}}"
+features = ["desktop"]</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap hero-code">
+        <div class="split two">
+          <div>
+            <h2 class="hero-code-title">Declarative Rust</h2>
+            <p class="tab-note">A component that runs again when its signal changes; the reconciler patches the text. From the <a href="https://github.com/wieslawsoltes/FerroUI#declarative-rust-ui">README</a>.</p>
+            <div class="code" data-label="the declarative counter">
+              <div class="code-head"><span class="file">src/main.rs</span><span class="lang">rust</span></div>
+<pre><code data-lang="rust">use ferroui_base::layout::Orientation;
+use ferroui_view::prelude::*;
+
+#[component(rerender)]
+fn Counter() -&gt; Element {
+    let count = use_signal(|| 0);
+    rsx! {
+        StackPanel { orientation: Orientation::Horizontal, spacing: 8.0,
+            TextBlock { text: format!("Clicked {} times", count.get()) }
+            Button { class: "accent", on_click: move |_| count.update(|c| *c += 1), "Click" }
+        }
+    }
+}
+
+fn main() {
+    ferroui_view::launch(|| rsx! { Window { title: "Counter", Counter {} } });
+}</code></pre>
+            </div>
+          </div>
+          <div>
+            <h2 class="hero-code-title">Or XAML, compiled to Rust</h2>
+            <p class="tab-note">The same controls, themes and bindings in markup, compiled by the build script of the crate. Rust and XAML views can be mixed in one application.</p>
+            <div class="code" data-label="the XAML view">
+              <div class="code-head"><span class="file">MainWindow.xaml</span><span class="lang">xml</span></div>
+<pre><code data-lang="xml">&lt;Window xmlns="https://github.com/ferroui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hello"&gt;
+  &lt;StackPanel Margin="16" Spacing="8"&gt;
+    &lt;TextBlock Text="{Binding Greeting}" /&gt;
+    &lt;Button Content="Click" Command="{Binding ClickCommand}" /&gt;
+  &lt;/StackPanel&gt;
+&lt;/Window&gt;</code></pre>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Highlights -->
-    <section id="features" aria-labelledby="features-title">
+    <!-- Declarative Rust UI -->
+    <section id="declarative" aria-labelledby="declarative-title">
       <div class="wrap">
         <div class="section-head rise">
-          <span class="eyebrow">Highlights</span>
-          <h2 id="features-title">One framework, from markup to pixels</h2>
-          <p>Controls, styling, binding, layout and rendering in Rust, released together as one set of crates at one version.</p>
+          <span class="eyebrow">Declarative Rust UI</span>
+          <h2 id="declarative-title">Signals and React-like components, in Rust</h2>
+          <p><code>ferroui-view</code> writes user interfaces in plain Rust, on the same controls, themes, styles and bindings as markup. A component can run once and let its properties follow signals, in the manner of SolidJS and Leptos, or run again when its state changes and let a reconciler patch the controls, in the manner of React. Components of both kinds are children of each other.</p>
+        </div>
+
+        <div class="declarative-code rise">
+          <div class="tabs" role="tablist" aria-label="Declarative styles">
+            <button class="tab" role="tab" id="tab-decl-hooks" aria-controls="panel-decl-hooks" aria-selected="true" tabindex="0" type="button">Components with hooks</button>
+            <button class="tab" role="tab" id="tab-decl-signals" aria-controls="panel-decl-signals" aria-selected="false" tabindex="-1" type="button">rsx! and signals</button>
+            <button class="tab" role="tab" id="tab-decl-builders" aria-controls="panel-decl-builders" aria-selected="false" tabindex="-1" type="button">Builders</button>
+            <button class="tab" role="tab" id="tab-decl-list" aria-controls="panel-decl-list" aria-selected="false" tabindex="-1" type="button">Keyed list</button>
+          </div>
+
+          <div role="tabpanel" id="panel-decl-hooks" aria-labelledby="tab-decl-hooks" tabindex="0">
+            <p class="tab-note">The counter of 7GUIs as a component that runs again: its state is a hook, the function runs again when the count changes, and the reconciler patches the text of the field. From <a href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/SevenGuis"><code>samples/SevenGuis</code></a>.</p>
+            <div class="code" data-label="the counter with hooks">
+              <div class="code-head"><span class="file">counter.rs</span><span class="lang">rust</span></div>
+<pre><code data-lang="rust">use ferroui_base::layout::Orientation;
+use ferroui_view::prelude::*;
+
+#[component(rerender)]
+pub fn Counter() -&gt; Element {
+    let count = use_signal(|| 0);
+    rsx! {
+        StackPanel { orientation: Orientation::Horizontal, spacing: 8.0,
+            TextBox { text: count.get().to_string(), is_read_only: true, width: 80.0 }
+            Button { on_click: move |_| count.update(|c| *c += 1), "Count" }
+        }
+    }
+}</code></pre>
+            </div>
+          </div>
+
+          <div role="tabpanel" id="panel-decl-signals" aria-labelledby="tab-decl-signals" tabindex="0" hidden>
+            <p class="tab-note">The same counter as a component that runs once: the text of the field follows the signal, and a click updates that property and nothing else.</p>
+            <div class="code" data-label="the counter with a signal">
+              <div class="code-head"><span class="file">counter.rs</span><span class="lang">rust</span></div>
+<pre><code data-lang="rust">use ferroui_base::layout::Orientation;
+use ferroui_view::prelude::*;
+
+#[component]
+pub fn Counter() -&gt; Element {
+    let count = signal(0);
+    rsx! {
+        StackPanel { orientation: Orientation::Horizontal, spacing: 8.0,
+            TextBox { text: count, is_read_only: true, width: 80.0 }
+            Button { on_click: move |_| count.update(|c| *c += 1), "Count" }
+        }
+    }
+}</code></pre>
+            </div>
+          </div>
+
+          <div role="tabpanel" id="panel-decl-builders" aria-labelledby="tab-decl-builders" tabindex="0" hidden>
+            <p class="tab-note">The same counter with the builders, without macros: one builder per control and one setter per property and routed event, generated from the sources of the controls.</p>
+            <div class="code" data-label="the counter with builders">
+              <div class="code-head"><span class="file">counter.rs</span><span class="lang">rust</span></div>
+<pre><code data-lang="rust">use ferroui_base::layout::Orientation;
+use ferroui_view::prelude::*;
+
+pub fn counter() -&gt; Element {
+    let count = signal(0);
+    stack_panel()
+        .orientation(Orientation::Horizontal)
+        .spacing(8.0)
+        .child(text_box().text(count).is_read_only(true).width(80.0))
+        .child(button().content("Count").on_click(move |_| count.update(|c| *c += 1)))
+        .into()
+}</code></pre>
+            </div>
+          </div>
+
+          <div role="tabpanel" id="panel-decl-list" aria-labelledby="tab-decl-list" tabindex="0" hidden>
+            <p class="tab-note">A keyed list and conditions in <code>rsx!</code>: the item of a todo that stays keeps its controls, and <code>TodoItem</code> runs again only when its todo changes. From <a href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/TodoMvc"><code>samples/TodoMvc</code></a>.</p>
+            <div class="code" data-label="the list of TodoMVC">
+              <div class="code-head"><span class="file">view.rs</span><span class="lang">rust</span></div>
+<pre><code data-lang="rust">#[component(rerender)]
+fn TodoList(todos: Signal&lt;Todos&gt;, filter: Filter) -&gt; Element {
+    let (visible, all_completed, any) =
+        todos.with(|list| (list.visible(filter), list.all_completed(), !list.is_empty()));
+
+    rsx! {
+        StackPanel { spacing: 8.0,
+            if any {
+                CheckBox { name: "ToggleAll", is_checked: all_completed,
+                    on_click: move |_| todos.update(|list| list.set_all_completed(!all_completed)),
+                    "Mark all as complete" }
+            }
+            StackPanel { name: "Todos", spacing: 2.0,
+                for todo in visible {
+                    TodoItem { key: todo.id, todo, todos }
+                }
+            }
+            if any {
+                Footer { todos, filter }
+            }
+        }
+    }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="features reveal-scope rise">
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-rsx"></use></svg></div>
+            <h3>Builders and <code>rsx!</code></h3>
+            <p>A builder for every control, generated from the sources of the controls, and the <code>rsx!</code> macro for the tree, with attached properties, text, conditions and loops. A misspelled or mistyped attribute is a compile error.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui.md">Declarative UI</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-signal"></use></svg></div>
+            <h3>Fine-grained signals</h3>
+            <p>Signals, memos and effects. A property follows a signal or a closure and updates without running anything else; values can be two-way, and keyed lists, conditions and computed children follow state (<code>for_each</code>, <code>show</code>, <code>dynamic</code>).</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui.md#6-state">State</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-component"></use></svg></div>
+            <h3>Components and hooks</h3>
+            <p>Function components with <code>use_signal</code>, <code>use_memo</code>, <code>use_effect</code>, <code>use_effect_with</code> and <code>use_hook</code>; <code>provide_context</code> and <code>use_context</code> hand values to the components below.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui.md#71-hooks">Hooks</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui-react.md">Compared with React</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-layers"></use></svg></div>
+            <h3>A reconciler</h3>
+            <p>Siblings are matched by key and by place, equal values are left alone, handlers are swapped in place, and keyed lists are reordered with the fewest moves. A component with comparable parameters is memoized by default.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui.md#8-the-reconciler">Reconciler</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-flow"></use></svg></div>
+            <h3>Async data, errors, navigation</h3>
+            <p><code>use_future</code> with <code>suspense</code> for data that arrives later, <code>error_boundary</code> for a part of the window that fails without ending the application, and a <code>router</code> with routes and parameters.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui.md#13-patterns-of-larger-applications-phase-6">Larger applications</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-themes"></use></svg></div>
+            <h3>Styles, themes and motion</h3>
+            <p>Styles with XAML selectors, the theme variant and resources followed live, transitions and key-frame animations, popups and context menus as elements, and virtualized lists whose items are components.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui.md#10-the-rest-of-the-api-phase-3">Styles and motion</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-reload"></use></svg></div>
+            <h3>Hot reload and an inspector</h3>
+            <p>With the feature <code>hot-reload</code>, the literals of <code>rsx!</code> are edited while the application runs and state, focus and scroll positions stay. Debug builds report missing keys and runaway components, and Shift+F12 opens an inspector of the components.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui.md#11-tools-phase-4">Tools</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/development/hot-reload.md">Hot reload engine</a></div>
+          </article>
+        </div>
+
+        <div class="react-map rise">
+          <h3>For React developers</h3>
+          <div class="card table-wrap">
+            <table class="data">
+              <caption class="visually-hidden">React concepts and their FerroUI counterparts</caption>
+              <thead><tr><th scope="col">React</th><th scope="col">FerroUI</th></tr></thead>
+              <tbody>
+                <tr><td>JSX</td><td><code>rsx!</code>, or the builders</td></tr>
+                <tr><td>function component</td><td><code>#[component(rerender)]</code>, or <code>#[component]</code> that runs once</td></tr>
+                <tr><td><code>useState</code>, <code>useReducer</code></td><td><code>use_signal</code> (a <code>Copy</code> signal: <code>get</code>, <code>set</code>, <code>update</code>)</td></tr>
+                <tr><td><code>useEffect</code></td><td><code>use_effect_with(deps, ..)</code> with <code>on_cleanup</code>; <code>use_effect</code> follows the signals it reads</td></tr>
+                <tr><td><code>useMemo</code>, <code>useCallback</code></td><td><code>use_memo</code> (follows signals, no dependency list); handlers need no memoizing</td></tr>
+                <tr><td><code>useContext</code></td><td><code>provide_context</code>, <code>use_context::&lt;T&gt;()</code></td></tr>
+                <tr><td><code>React.memo</code>, <code>key</code></td><td>the default for comparable parameters, <code>key: ..</code></td></tr>
+                <tr><td>error boundaries, <code>Suspense</code>, React Router</td><td><code>error_boundary</code>, <code>use_future</code> with <code>suspense</code>, <code>router</code> with <code>route</code></td></tr>
+                <tr><td>Fast Refresh, React DevTools</td><td>the feature <code>hot-reload</code> (literals), the inspector (Shift+F12)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="tab-note">The complete mapping, where the two behave alike and where they differ, and what React has that FerroUI does not have yet are in <a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui-react.md">declarative-ui-react.md</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compiled XAML -->
+    <section id="xaml" aria-labelledby="xaml-title">
+      <div class="wrap">
+        <div class="section-head rise">
+          <span class="eyebrow">Compiled XAML</span>
+          <h2 id="xaml-title">Or write the views in XAML, compiled to Rust</h2>
+          <p>Markup is the second way to write an interface, on the same controls, themes and bindings. The build script of a crate compiles it to Rust source; it can also be loaded at run time. Rust components and XAML views can be placed inside each other.</p>
         </div>
         <div class="features reveal-scope rise">
           <article class="card reveal feature">
             <div class="icon"><svg aria-hidden="true"><use href="#i-xaml"></use></svg></div>
-            <h3>XAML, at run time or compiled</h3>
-            <p>Markup is loaded at run time, or compiled to Rust source by the build script of a crate, with the framework's markup extensions, compiled <code>{x:Bind}</code> and compiled bindings by default.</p>
-            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/xaml.md">XAML design</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/x-bind.md">x:Bind</a></div>
+            <h3>Compiled, or loaded at run time</h3>
+            <p>XAML documents are compiled to Rust by the build script of the crate, with the framework's markup extensions; the run-time loader reads the same markup, and XAML reloaded at run time keeps supported live components.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/xaml.md">XAML design</a></div>
           </article>
           <article class="card reveal feature">
-            <div class="icon"><svg aria-hidden="true"><use href="#i-rsx"></use></svg></div>
-            <h3>Declarative Rust API</h3>
-            <p>User interfaces without XAML: builders for every control, the <code>rsx!</code> macro, signals, and components with hooks and a reconciler.</p>
-            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui.md">Declarative UI</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui-react.md">Compared with React</a></div>
+            <div class="icon"><svg aria-hidden="true"><use href="#i-code"></use></svg></div>
+            <h3>Compiled bindings</h3>
+            <p>Compiled <code>{x:Bind}</code> and compiled bindings by default, with converters, multi-bindings, data validation and templates; reflection-style binding paths remain available.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/x-bind.md">x:Bind</a></div>
           </article>
           <article class="card reveal feature">
             <div class="icon"><svg aria-hidden="true"><use href="#i-themes"></use></svg></div>
-            <h3>Five themes</h3>
-            <p>WinUI 3 (the default), Fluent, Simple, macOS 26 and Android Material 3 Expressive, each for the whole control set.</p>
-            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/winui-theme.md">WinUI 3</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/macos26-theme.md">macOS 26</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/material-theme.md">Material</a></div>
+            <h3>Themes trimmed to the application</h3>
+            <p>Themes are compiled XAML, and an application keeps only the units of its theme it uses. A code-only application names its theme in a build script of one statement.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/xaml-themes.md">Compiled XAML themes</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-component"></use></svg></div>
+            <h3>Rust and XAML together</h3>
+            <p>A component in XAML (<code>ComponentHost</code>, <code>register_component</code>), XAML in a component (<code>use_xaml</code>), and the data context of a view model in a component (<code>use_data_context</code>).</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui.md#9-xaml-and-templates-phase-2">XAML and components</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-flow"></use></svg></div>
+            <h3>MVVM with ReactiveUI</h3>
+            <p>ReactiveUI, DynamicData, Splat and Rx as crates of the workspace, with an integration of ReactiveUI with the controls; only the integration depends on the user interface, so view models are tested without a window.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/mvvm.md">MVVM guide</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-pointer"></use></svg></div>
+            <h3>Behaviors</h3>
+            <p>Triggers and actions in markup: about 330 custom behaviors, input events, drag and drop, responsive classes and animations.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/behaviors.md">Behaviors</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- The framework -->
+    <section id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <div class="section-head rise">
+          <span class="eyebrow">Framework</span>
+          <h2 id="features-title">One framework, from the controls to the pixels</h2>
+          <p>Controls, styling, binding, layout and rendering in Rust, released together as one set of crates at one version, whichever way the views are written.</p>
+        </div>
+
+        <div class="samples-sub rise">
+          <h3>Controls</h3>
+          <p>One control library, with automation peers for the accessibility APIs of the platforms.</p>
+        </div>
+        <div class="features reveal-scope rise">
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-grid"></use></svg></div>
+            <h3>A complete control library</h3>
+            <p>Buttons, text input, items controls with virtualization, menus, pickers, calendar, navigation, pages, dialogs, rich text, inking and media, on an object model of styled properties, routed events, layout, input, focus and gestures.</p>
+            <div class="links"><a href="https://wieslawsoltes.github.io/FerroUI/">Control Catalog</a></div>
           </article>
           <article class="card reveal feature">
             <div class="icon"><svg aria-hidden="true"><use href="#i-layers"></use></svg></div>
             <h3>WinUI controls and composition</h3>
-            <p>Native WinUI controls such as NavigationView, InfoBar and NumberBox; acrylic and Mica materials, Reveal, theme shadows and connected animations.</p>
+            <p>WinUI controls such as NavigationView, InfoBar and NumberBox; acrylic and Mica materials, Reveal, theme shadows and connected animations.</p>
             <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/winui-controls.md">Controls</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/winui-composition.md">Composition</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/winui-materials.md">Materials</a></div>
           </article>
           <article class="card reveal feature">
@@ -181,26 +458,70 @@ ferroui-themes-winui = "={{version}}"</code></pre>
           <article class="card reveal feature">
             <div class="icon"><svg aria-hidden="true"><use href="#i-grid"></use></svg></div>
             <h3>TreeDataGrid</h3>
-            <p>Hierarchical and tabular data in one virtualizing view, with sorting, selection, editing and drag and drop.</p>
+            <p>Hierarchical and tabular data in one virtualizing view, with sorting, selection, editing and drag and drop; a builder in <code>ferroui-view</code> behind a feature.</p>
             <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/treedatagrid.md">TreeDataGrid</a></div>
           </article>
           <article class="card reveal feature">
             <div class="icon"><svg aria-hidden="true"><use href="#i-chart"></use></svg></div>
-            <h3>LiveCharts2 charts</h3>
-            <p>Cartesian and pie charts with LiveCharts2's measurement, paint and motion, in compiled XAML with live data; simple charts beside them.</p>
+            <h3>Charts</h3>
+            <p>Cartesian and pie charts of LiveCharts2, with its measurement, paint and motion and live data, and simple line, area and bar charts beside them.</p>
             <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/livecharts2.md">LiveCharts2</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/winui-charts.md">Charts</a></div>
           </article>
           <article class="card reveal feature">
-            <div class="icon"><svg aria-hidden="true"><use href="#i-flow"></use></svg></div>
-            <h3>MVVM with ReactiveUI</h3>
-            <p>Rust ports of System.Reactive, DynamicData, Splat and ReactiveUI, with view models that are tested without a window.</p>
-            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/mvvm.md">MVVM guide</a></div>
+            <div class="icon"><svg aria-hidden="true"><use href="#i-play"></use></svg></div>
+            <h3>Media and 3D</h3>
+            <p>Video playback, camera capture and QR analysis in crates of their own, and WPF-style 3D: <code>Viewport3D</code> and the Media3D scene model, drawn in Skia and Vello.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/media/README.md">Media</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/media3d.md">3D</a></div>
           </article>
           <article class="card reveal feature">
-            <div class="icon"><svg aria-hidden="true"><use href="#i-reload"></use></svg></div>
-            <h3>Hot reload</h3>
-            <p>Experimental: the literals of <code>rsx!</code>, XAML reloaded at run time with supported live components kept, and explicit Rust functions patched during development.</p>
-            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/development/hot-reload.md">Hot reload engine</a></div>
+            <div class="icon"><svg aria-hidden="true"><use href="#i-globe"></use></svg></div>
+            <h3>Localization</h3>
+            <p>ProTranslate supplies translation bindings, live culture switching, right-to-left layout, calendars, region and measurement services, and generated typed catalogs.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/protranslate.md">Localization guide</a></div>
+          </article>
+        </div>
+
+        <div class="samples-sub rise">
+          <h3>Themes and rendering</h3>
+          <p>Five design languages, drawn on the GPU.</p>
+        </div>
+        <div class="features reveal-scope rise">
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-themes"></use></svg></div>
+            <h3>Five themes</h3>
+            <p>WinUI 3 (the default), Fluent, Material 3 Expressive, macOS 26 and Simple, each for every control, with light and dark variants, on a styling system of selectors, styles, control themes, resources and transitions.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/winui-theme.md">WinUI 3</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/material-theme.md">Material</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/macos26-theme.md">macOS 26</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-chip"></use></svg></div>
+            <h3>GPU rendering</h3>
+            <p>A compositor with a render loop on its own thread, dirty-region tracking, server-side visuals and composition animations. Skia renders through Graphite on Metal, Ganesh on OpenGL, ANGLE, WebGL and Vulkan, or in software; HarfBuzz shapes text.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/render-thread.md">Render thread</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/text-rendering.md">Text rendering</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-chip"></use></svg></div>
+            <h3>Vello, experimental</h3>
+            <p>An experimental Vello backend sits behind the same contracts as Skia, with CPU, hybrid and GPU modes, and is measured against Skia.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/vello-backend.md">Vello backend</a></div>
+          </article>
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-layers"></use></svg></div>
+            <h3>Custom effects</h3>
+            <p>Effects on <code>Visual.Effect</code> as effect graphs and as runtime shaders on Skia and Vello, with a library of effects and page transitions.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/custom-effects.md">Custom effects</a></div>
+          </article>
+        </div>
+
+        <div class="samples-sub rise">
+          <h3>Platforms, tools and size</h3>
+          <p>One code base on the desktop, on mobile and in the browser.</p>
+        </div>
+        <div class="features reveal-scope rise">
+          <article class="card reveal feature">
+            <div class="icon"><svg aria-hidden="true"><use href="#i-devices"></use></svg></div>
+            <h3>Six platforms</h3>
+            <p>macOS, Windows, Linux (X11, Wayland and the framebuffer), iOS, Android and the browser through WebAssembly; FerroUI content in a WinUI 3 window, and headless windows for tests.</p>
+            <div class="links"><a href="#status">What works on each platform</a></div>
           </article>
           <article class="card reveal feature">
             <div class="icon"><svg aria-hidden="true"><use href="#i-tools"></use></svg></div>
@@ -209,28 +530,22 @@ ferroui-themes-winui = "={{version}}"</code></pre>
             <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI#developer-tools">Developer tools</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/mcp.md">MCP</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/devtools-cdp.md">CDP</a></div>
           </article>
           <article class="card reveal feature">
-            <div class="icon"><svg aria-hidden="true"><use href="#i-chip"></use></svg></div>
-            <h3>Skia, with Vello experimental</h3>
-            <p>Skia renders through Graphite on Metal, Ganesh on OpenGL, ANGLE, WebGL and Vulkan, or in software; HarfBuzz shapes text. A Vello backend is experimental.</p>
-            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/render-thread.md">Render thread</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/vello-backend.md">Vello backend</a></div>
+            <div class="icon"><svg aria-hidden="true"><use href="#i-pen"></use></svg></div>
+            <h3>Designer Studio</h3>
+            <p>A visual designer built on the framework: an artboard with synchronized XAML, layers, editable properties, layout tools, preview stages, prototype flows and keyframe animation.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/designer/README.md">Designer Studio</a></div>
           </article>
           <article class="card reveal feature">
-            <div class="icon"><svg aria-hidden="true"><use href="#i-pointer"></use></svg></div>
-            <h3>Behaviors</h3>
-            <p>Triggers and actions in markup: about 330 custom behaviors, input events, drag and drop, responsive classes and animations.</p>
-            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/behaviors.md">Behaviors</a></div>
+            <div class="icon"><svg aria-hidden="true"><use href="#i-gauge"></use></svg></div>
+            <h3>Small and measured</h3>
+            <p>Themes and type tables are trimmed to what an application uses, shipped builds abort instead of unwinding, and frame cost, start time and size are held by a local performance gate.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/binary-size.md">Binary size</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/desktop-performance.md">Performance</a></div>
           </article>
           <article class="card reveal feature">
-            <div class="icon"><svg aria-hidden="true"><use href="#i-layers"></use></svg></div>
-            <h3>Custom effects</h3>
-            <p>Effects on <code>Visual.Effect</code> as effect graphs and as runtime shaders on Skia and Vello, with a library of effects and page transitions.</p>
-            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/custom-effects.md">Custom effects</a></div>
-          </article>
-          <article class="card reveal feature">
-            <div class="icon"><svg aria-hidden="true"><use href="#i-play"></use></svg></div>
-            <h3>Media and 3D</h3>
-            <p>Video playback, camera capture and QR analysis in crates of their own, and WPF-style 3D: <code>Viewport3D</code> and the Media3D scene model, drawn in Skia and Vello.</p>
-            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/media/README.md">Media</a><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/media3d.md">3D</a></div>
+            <div class="icon"><svg aria-hidden="true"><use href="#i-shield"></use></svg></div>
+            <h3>Safe Rust</h3>
+            <p>The controls, markup, XAML and theme crates contain no <code>unsafe</code> code. It is confined to a small part of the object model core and to the rendering, text shaping, platform and interop backends.</p>
+            <div class="links"><a href="https://github.com/wieslawsoltes/FerroUI#highlights">Highlights</a></div>
           </article>
         </div>
       </div>
@@ -331,9 +646,82 @@ ferroui-themes-winui = "={{version}}"</code></pre>
 
         <div class="samples-sub rise">
           <h3>In the repository</h3>
-          <p>Run them from a clone of FerroUI with the command on each card.</p>
+          <p>The declarative samples first. Run them from a clone of FerroUI with the command on each card.</p>
         </div>
         <div class="samples reveal-scope rise">
+          <article class="card reveal sample">
+            <div class="shot contain">
+              <img src="assets/img/seven-guis.webp" srcset="assets/img/seven-guis-480.webp 480w, assets/img/seven-guis.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
+                   alt="Six of the 7GUIs tasks: CRUD, Circle Drawer, Counter, Temperature Converter, Flight Booker and Timer">
+            </div>
+            <div class="body">
+              <h4>7GUIs</h4>
+              <p>The seven tasks of the 7GUIs benchmark, each in three styles of the declarative API: builders, <code>rsx!</code> and components with hooks.</p>
+              <div class="run">cargo run -p seven-guis-crud-macros</div>
+              <div class="actions">
+                <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/SevenGuis" aria-label="Source of 7GUIs"><svg aria-hidden="true"><use href="#i-code"></use></svg> Source</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal sample">
+            <div class="shot">
+              <img src="assets/img/todomvc.webp" srcset="assets/img/todomvc-480.webp 480w, assets/img/todomvc.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
+                   alt="TodoMVC written with ferroui-view: a list of three todos, one completed, with the filters All, Active and Completed">
+            </div>
+            <div class="body">
+              <h4>TodoMVC</h4>
+              <p>TodoMVC as components that run again, with their state in hooks, a keyed list, editing in place and the filters as routes of the router, in the WinUI 3 theme.</p>
+              <div class="run">cargo run -p todo-mvc</div>
+              <div class="actions">
+                <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/TodoMvc" aria-label="Source of TodoMVC"><svg aria-hidden="true"><use href="#i-code"></use></svg> Source</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal sample">
+            <div class="shot">
+              <img class="only-light" src="assets/img/view-gallery-light.webp" srcset="assets/img/view-gallery-light-480.webp 480w, assets/img/view-gallery-light.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
+                   alt="ViewGallery in the light theme variant: a colour spectrum beside a TreeDataGrid of programming languages">
+              <img class="only-dark" src="assets/img/view-gallery-dark.webp" srcset="assets/img/view-gallery-dark-480.webp 480w, assets/img/view-gallery-dark.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
+                   alt="ViewGallery in the dark theme variant: a colour spectrum beside a TreeDataGrid of programming languages">
+            </div>
+            <div class="body">
+              <h4>ViewGallery</h4>
+              <p>The declarative API with styles, the theme variant and resources, transitions, a context menu, the colour picker and the TreeDataGrid.</p>
+              <div class="run">cargo run -p view-gallery</div>
+              <div class="actions">
+                <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/ViewGallery" aria-label="Source of ViewGallery"><svg aria-hidden="true"><use href="#i-code"></use></svg> Source</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal sample">
+            <div class="shot">
+              <img src="assets/img/designer-studio.webp" srcset="assets/img/designer-studio-480.webp 480w, assets/img/designer-studio.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
+                   alt="Designer Studio: an artboard with a dialog being designed, the layers on the left and the properties on the right">
+            </div>
+            <div class="body">
+              <h4>Designer Studio</h4>
+              <p>A visual XAML designer built on FerroUI: an artboard with synchronized XAML, layers, properties, layout tools, preview stages and keyframe animation.</p>
+              <div class="run">cargo run -p designer-studio</div>
+              <div class="actions">
+                <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/designer/README.md" aria-label="Documentation of Designer Studio"><svg aria-hidden="true"><use href="#i-code"></use></svg> Docs</a>
+                <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/DesignerStudio" aria-label="Source of Designer Studio"><svg aria-hidden="true"><use href="#i-code"></use></svg> Source</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal sample">
+            <div class="shot">
+              <img src="assets/img/reactive-demo.webp" srcset="assets/img/reactive-demo-480.webp 480w, assets/img/reactive-demo.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
+                   alt="ReactiveDemo on macOS: a search for serde in a crate browser with the WinUI 3 theme">
+            </div>
+            <div class="body">
+              <h4>ReactiveDemo</h4>
+              <p>The getting-started sample of ReactiveUI: a crates.io browser on the WinUI 3 theme, with a view model, commands and bindings.</p>
+              <div class="run">cargo run -p reactive-demo</div>
+              <div class="actions">
+                <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/ReactiveDemo" aria-label="Source of ReactiveDemo"><svg aria-hidden="true"><use href="#i-code"></use></svg> Source</a>
+              </div>
+            </div>
+          </article>
           <article class="card reveal sample">
             <div class="shot">
               <img src="assets/img/livecharts.webp" srcset="assets/img/livecharts-480.webp 480w, assets/img/livecharts.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
@@ -362,65 +750,6 @@ ferroui-themes-winui = "={{version}}"</code></pre>
               <div class="run">cargo run -p winui-gallery --features desktop</div>
               <div class="actions">
                 <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/WinUIGallery" aria-label="Source of WinUI Gallery"><svg aria-hidden="true"><use href="#i-code"></use></svg> Source</a>
-              </div>
-            </div>
-          </article>
-          <article class="card reveal sample">
-            <div class="shot">
-              <img src="assets/img/designer-studio.webp" srcset="assets/img/designer-studio-480.webp 480w, assets/img/designer-studio.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
-                   alt="Designer Studio: an artboard with a dialog being designed, the layers on the left and the properties on the right">
-            </div>
-            <div class="body">
-              <h4>Designer Studio</h4>
-              <p>A visual XAML designer built on FerroUI: an artboard with synchronized XAML, layers, properties, layout tools, preview stages and keyframe animation.</p>
-              <div class="run">cargo run -p designer-studio</div>
-              <div class="actions">
-                <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/designer/README.md" aria-label="Documentation of Designer Studio"><svg aria-hidden="true"><use href="#i-code"></use></svg> Docs</a>
-                <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/DesignerStudio" aria-label="Source of Designer Studio"><svg aria-hidden="true"><use href="#i-code"></use></svg> Source</a>
-              </div>
-            </div>
-          </article>
-          <article class="card reveal sample">
-            <div class="shot contain">
-              <img src="assets/img/seven-guis.webp" srcset="assets/img/seven-guis-480.webp 480w, assets/img/seven-guis.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
-                   alt="Six of the 7GUIs tasks: CRUD, Circle Drawer, Counter, Temperature Converter, Flight Booker and Timer">
-            </div>
-            <div class="body">
-              <h4>7GUIs</h4>
-              <p>The seven tasks of the 7GUIs benchmark, each in three styles of the declarative API: builders, <code>rsx!</code> and components with hooks.</p>
-              <div class="run">cargo run -p seven-guis-crud-macros</div>
-              <div class="actions">
-                <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/SevenGuis" aria-label="Source of 7GUIs"><svg aria-hidden="true"><use href="#i-code"></use></svg> Source</a>
-              </div>
-            </div>
-          </article>
-          <article class="card reveal sample">
-            <div class="shot">
-              <img class="only-light" src="assets/img/view-gallery-light.webp" srcset="assets/img/view-gallery-light-480.webp 480w, assets/img/view-gallery-light.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
-                   alt="ViewGallery in the light theme variant: a colour spectrum beside a TreeDataGrid of programming languages">
-              <img class="only-dark" src="assets/img/view-gallery-dark.webp" srcset="assets/img/view-gallery-dark-480.webp 480w, assets/img/view-gallery-dark.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
-                   alt="ViewGallery in the dark theme variant: a colour spectrum beside a TreeDataGrid of programming languages">
-            </div>
-            <div class="body">
-              <h4>ViewGallery</h4>
-              <p>The declarative API with styles, the theme variant and resources, transitions, a context menu, the colour picker and the TreeDataGrid.</p>
-              <div class="run">cargo run -p view-gallery</div>
-              <div class="actions">
-                <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/ViewGallery" aria-label="Source of ViewGallery"><svg aria-hidden="true"><use href="#i-code"></use></svg> Source</a>
-              </div>
-            </div>
-          </article>
-          <article class="card reveal sample">
-            <div class="shot">
-              <img src="assets/img/reactive-demo.webp" srcset="assets/img/reactive-demo-480.webp 480w, assets/img/reactive-demo.webp 960w" sizes="(min-width: 1200px) 380px, (min-width: 720px) 45vw, calc(100vw - 32px)" width="960" height="600" loading="lazy" decoding="async"
-                   alt="ReactiveDemo on macOS: a search for serde in a crate browser with the WinUI 3 theme">
-            </div>
-            <div class="body">
-              <h4>ReactiveDemo</h4>
-              <p>The getting-started sample of ReactiveUI: a crates.io browser on the WinUI 3 theme, with a view model, commands and bindings.</p>
-              <div class="run">cargo run -p reactive-demo</div>
-              <div class="actions">
-                <a class="btn btn-sm" href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/ReactiveDemo" aria-label="Source of ReactiveDemo"><svg aria-hidden="true"><use href="#i-code"></use></svg> Source</a>
               </div>
             </div>
           </article>
@@ -467,11 +796,11 @@ ferroui-themes-winui = "={{version}}"</code></pre>
           <li class="step rise">
             <div>
               <h3>Start from a template</h3>
-              <p>One command creates a project with its theme, its first window and its tests, in XAML with MVVM or code-behind, with builders or with <code>rsx!</code>, or as a cross-platform repository. The <a href="#templates">templates</a> list them with their options.</p>
+              <p>One command creates a project with its theme, its first window and its tests: with <code>rsx!</code> and hooks or with builders, in XAML with MVVM or code-behind, or as a cross-platform repository. The <a href="#templates">templates</a> list them with their options.</p>
               <div class="code" data-label="template commands">
                 <div class="code-head"><span class="file term">Terminal</span><span class="lang">sh</span></div>
 <pre><code data-lang="sh">cargo install cargo-generate
-cargo generate --git https://github.com/FerroUI/templates app --name my-app</code></pre>
+cargo generate --git https://github.com/FerroUI/templates rsx --name my-app</code></pre>
               </div>
             </div>
           </li>
@@ -479,13 +808,12 @@ cargo generate --git https://github.com/FerroUI/templates app --name my-app</cod
           <li class="step rise">
             <div>
               <h3>Or add the crates yourself</h3>
-              <p>A desktop application names the base library, the controls, the desktop entry point and a theme:</p>
+              <p>A declarative desktop application names the base library, <code>ferroui-view</code> with its feature <code>desktop</code>, and a theme:</p>
               <div class="code" data-label="Cargo.toml dependencies">
                 <div class="code-head"><span class="file">Cargo.toml</span><span class="lang">toml</span></div>
 <pre><code data-lang="toml">[dependencies]
 ferroui-base = "={{version}}"
-ferroui-controls = "={{version}}"
-ferroui-desktop = "={{version}}"
+ferroui-view = { version = "={{version}}", features = ["desktop"] }
 ferroui-themes-winui = "={{version}}"</code></pre>
               </div>
               <div class="notice" data-release-notice role="note" hidden>
@@ -494,8 +822,9 @@ ferroui-themes-winui = "={{version}}"</code></pre>
               </div>
               <p>
                 The WinUI 3 theme, <code>ferroui-themes-winui</code> (<code>WinUITheme</code>), is the default; the Fluent theme is <code>ferroui-themes-fluent</code> (<code>FluentTheme</code>), in place of WinUI 3 or beside it.
+                An application in XAML or with Rust objects names the controls, <code>ferroui-controls</code>, and the desktop entry point, <code>ferroui-desktop</code>, as the examples below do.
                 One dependency can stand for all of them: the facade crate <code>ferroui</code>, with a prelude and features for the platforms, the themes and the backends.
-                The declarative API is <code>ferroui-view</code>, MVVM is <code>ferroui-reactiveui-controls</code> and the developer tools are <code>ferroui-diagnostics</code>.
+                MVVM is <code>ferroui-reactiveui-controls</code> and the developer tools are <code>ferroui-diagnostics</code>.
               </p>
             </div>
           </li>
@@ -503,7 +832,7 @@ ferroui-themes-winui = "={{version}}"</code></pre>
           <li class="step rise">
             <div>
               <h3>Write a window</h3>
-              <p>Hello, World! in the WinUI 3 theme, in three of the ways FerroUI offers.</p>
+              <p>Hello, World! in the WinUI 3 theme: with <code>rsx!</code> and a signal, in XAML, and with Rust objects.</p>
               <div class="tabs" role="tablist" aria-label="Hello, World! styles">
                 <button class="tab" role="tab" id="tab-rsx" aria-controls="panel-rsx" aria-selected="true" tabindex="0" type="button">rsx! and signals</button>
                 <button class="tab" role="tab" id="tab-xaml" aria-controls="panel-xaml" aria-selected="false" tabindex="-1" type="button">XAML</button>
@@ -591,17 +920,6 @@ fn main() {
 &lt;/Window&gt;</code></pre>
                   </div>
                 </div>
-                <div class="code" data-label="XAML with bindings">
-                  <div class="code-head"><span class="file">View.xaml</span><span class="lang">xml</span></div>
-<pre><code data-lang="xml">&lt;Window xmlns="https://github.com/ferroui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Hello"&gt;
-  &lt;StackPanel Margin="16" Spacing="8"&gt;
-    &lt;TextBlock Text="{Binding Greeting}" /&gt;
-    &lt;Button Content="Click" Command="{Binding ClickCommand}" /&gt;
-  &lt;/StackPanel&gt;
-&lt;/Window&gt;</code></pre>
-                </div>
               </div>
 
               <div role="tabpanel" id="panel-rust" aria-labelledby="tab-rust" tabindex="0" hidden>
@@ -688,11 +1006,16 @@ fn main() -&gt; std::process::ExitCode {
 <pre><code data-lang="sh">git clone https://github.com/wieslawsoltes/FerroUI.git
 cd FerroUI
 
-# Hello, World! in XAML, and with builders, rsx! and hooks
-cargo run -p hello-world
+# Hello, World! with builders, rsx! and hooks, and in XAML
 cargo run -p hello-world-builders
 cargo run -p hello-world-macros
 cargo run -p hello-world-hooks
+cargo run -p hello-world
+
+# The declarative API: a 7GUIs task, TodoMVC and the gallery
+cargo run -p seven-guis-counter-hooks
+cargo run -p todo-mvc
+cargo run -p view-gallery
 
 # The ControlCatalog sample application
 cargo run -p control-catalog-desktop
@@ -785,7 +1108,7 @@ jobs:
         <div class="section-head rise">
           <span class="eyebrow">Templates</span>
           <h2 id="templates-title">Start a project with <code>cargo generate</code></h2>
-          <p>Project and item templates in the spirit of the <code>dotnet new</code> templates of .NET UI frameworks: XAML with MVVM or code-behind, builders, <code>rsx!</code> with hooks, a cross-platform repository with desktop, browser, Android and iOS hosts, a control library, and the items you add to a project. Each project template asks for its theme.</p>
+          <p>Project and item templates: <code>rsx!</code> with components and hooks, builders, XAML with MVVM or code-behind, a cross-platform repository with desktop, browser, Android and iOS hosts, a control library, and the items you add to a project. Each project template asks for its theme.</p>
         </div>
 
         <div class="split two rise">
@@ -795,7 +1118,7 @@ jobs:
 
 # Pick a template from the list, or name it
 cargo generate --git https://github.com/FerroUI/templates
-cargo generate --git https://github.com/FerroUI/templates app --name my-app
+cargo generate --git https://github.com/FerroUI/templates rsx --name my-app
 cd my-app
 cargo run</code></pre>
           </div>
@@ -811,10 +1134,10 @@ cargo run</code></pre>
 
         <div class="tpl rise">
           <div class="tpl-list card" role="tablist" aria-orientation="vertical" aria-label="Templates">
-            <button class="tpl-tab" role="tab" id="tpl-tab-app" aria-controls="tpl-app" aria-selected="true" tabindex="0" type="button"><span class="tpl-name">app</span><span class="tpl-kind">XAML with MVVM</span></button>
-            <button class="tpl-tab" role="tab" id="tpl-tab-codebehind" aria-controls="tpl-codebehind" aria-selected="false" tabindex="-1" type="button"><span class="tpl-name">app-codebehind</span><span class="tpl-kind">XAML with code-behind</span></button>
+            <button class="tpl-tab" role="tab" id="tpl-tab-rsx" aria-controls="tpl-rsx" aria-selected="true" tabindex="0" type="button"><span class="tpl-name">rsx</span><span class="tpl-kind">rsx!, components and hooks</span></button>
             <button class="tpl-tab" role="tab" id="tpl-tab-declarative" aria-controls="tpl-declarative" aria-selected="false" tabindex="-1" type="button"><span class="tpl-name">declarative</span><span class="tpl-kind">Builders, no XAML</span></button>
-            <button class="tpl-tab" role="tab" id="tpl-tab-rsx" aria-controls="tpl-rsx" aria-selected="false" tabindex="-1" type="button"><span class="tpl-name">rsx</span><span class="tpl-kind">rsx!, components and hooks</span></button>
+            <button class="tpl-tab" role="tab" id="tpl-tab-app" aria-controls="tpl-app" aria-selected="false" tabindex="-1" type="button"><span class="tpl-name">app</span><span class="tpl-kind">XAML with MVVM</span></button>
+            <button class="tpl-tab" role="tab" id="tpl-tab-codebehind" aria-controls="tpl-codebehind" aria-selected="false" tabindex="-1" type="button"><span class="tpl-name">app-codebehind</span><span class="tpl-kind">XAML with code-behind</span></button>
             <button class="tpl-tab" role="tab" id="tpl-tab-cross" aria-controls="tpl-cross" aria-selected="false" tabindex="-1" type="button"><span class="tpl-name">cross-platform</span><span class="tpl-kind">Desktop, browser, Android, iOS</span></button>
             <button class="tpl-tab" role="tab" id="tpl-tab-library" aria-controls="tpl-library" aria-selected="false" tabindex="-1" type="button"><span class="tpl-name">control-library</span><span class="tpl-kind">A templated control</span></button>
             <button class="tpl-tab" role="tab" id="tpl-tab-window" aria-controls="tpl-window" aria-selected="false" tabindex="-1" type="button"><span class="tpl-name">window</span><span class="tpl-kind">Item: a window</span></button>
@@ -825,7 +1148,43 @@ cargo run</code></pre>
           </div>
 
           <div class="tpl-panels">
-            <div class="tpl-panel card" role="tabpanel" id="tpl-app" aria-labelledby="tpl-tab-app" tabindex="0" data-template="app" data-next="cd {name}|cargo run">
+            <div class="tpl-panel card" role="tabpanel" id="tpl-rsx" aria-labelledby="tpl-tab-rsx" tabindex="0" data-template="rsx" data-next="cd {name}|cargo run">
+              <h3>rsx <span class="badge rust">Project</span></h3>
+              <p class="tab-note">A desktop application with the React-like API: <code>rsx!</code> trees, <code>#[component]</code> functions, a signal, and a component that renders again when its hook state changes (<code>use_signal</code>, <code>#[component(rerender)]</code>), as in <a href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/HelloWorld.Macros"><code>samples/HelloWorld.Macros</code></a> and <a href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/HelloWorld.Hooks"><code>samples/HelloWorld.Hooks</code></a>.</p>
+              <ul class="tpl-files" aria-label="Files"><li>src/main.rs</li><li>src/components.rs</li></ul>
+              <div class="tpl-options">
+                <label class="opt"><span>Name</span><input type="text" value="my-app" data-name spellcheck="false" autocomplete="off"></label>
+                <label class="opt"><span>Theme</span><select data-define="theme" data-default="winui">
+                  <option value="winui">WinUI 3</option><option value="fluent">Fluent</option><option value="simple">Simple</option><option value="macos">macOS 26</option><option value="material">Material 3 Expressive</option>
+                </select></label>
+              </div>
+              <div class="code" data-label="the commands of the rsx template">
+                <div class="code-head"><span class="file term">Terminal</span><span class="lang">sh</span></div>
+<pre><code data-lang="sh" data-command>cargo generate --git https://github.com/FerroUI/templates rsx --name my-app
+cd my-app
+cargo run</code></pre>
+              </div>
+            </div>
+
+            <div class="tpl-panel card" role="tabpanel" id="tpl-declarative" aria-labelledby="tpl-tab-declarative" tabindex="0" hidden data-template="declarative" data-next="cd {name}|cargo run">
+              <h3>declarative <span class="badge rust">Project</span></h3>
+              <p class="tab-note">A desktop application written in Rust with the builders of <code>ferroui-view</code> (<code>stack_panel()</code>, <code>button()</code>) and a signal the controls follow, as in <a href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/HelloWorld.Builders"><code>samples/HelloWorld.Builders</code></a>.</p>
+              <ul class="tpl-files" aria-label="Files"><li>src/main.rs</li><li>src/main_view.rs</li></ul>
+              <div class="tpl-options">
+                <label class="opt"><span>Name</span><input type="text" value="my-app" data-name spellcheck="false" autocomplete="off"></label>
+                <label class="opt"><span>Theme</span><select data-define="theme" data-default="winui">
+                  <option value="winui">WinUI 3</option><option value="fluent">Fluent</option><option value="simple">Simple</option><option value="macos">macOS 26</option><option value="material">Material 3 Expressive</option>
+                </select></label>
+              </div>
+              <div class="code" data-label="the commands of the declarative template">
+                <div class="code-head"><span class="file term">Terminal</span><span class="lang">sh</span></div>
+<pre><code data-lang="sh" data-command>cargo generate --git https://github.com/FerroUI/templates declarative --name my-app
+cd my-app
+cargo run</code></pre>
+              </div>
+            </div>
+
+            <div class="tpl-panel card" role="tabpanel" id="tpl-app" aria-labelledby="tpl-tab-app" tabindex="0" hidden data-template="app" data-next="cd {name}|cargo run">
               <h3>app <span class="badge rust">Project</span></h3>
               <p class="tab-note">A desktop application in XAML with the MVVM pattern, as in <a href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/MiniMvvm"><code>samples/MiniMvvm</code></a> and <a href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/ReactiveUIExample"><code>samples/ReactiveUIExample</code></a>. The build script compiles the documents to Rust; the view model and the window come with tests.</p>
               <ul class="tpl-files" aria-label="Files"><li>src/App.xaml</li><li>src/views/MainWindow.xaml</li><li>src/view_models/main_window_view_model.rs</li><li>build.rs</li></ul>
@@ -859,42 +1218,6 @@ cargo run</code></pre>
               <div class="code" data-label="the commands of the app-codebehind template">
                 <div class="code-head"><span class="file term">Terminal</span><span class="lang">sh</span></div>
 <pre><code data-lang="sh" data-command>cargo generate --git https://github.com/FerroUI/templates app-codebehind --name my-app
-cd my-app
-cargo run</code></pre>
-              </div>
-            </div>
-
-            <div class="tpl-panel card" role="tabpanel" id="tpl-declarative" aria-labelledby="tpl-tab-declarative" tabindex="0" hidden data-template="declarative" data-next="cd {name}|cargo run">
-              <h3>declarative <span class="badge rust">Project</span></h3>
-              <p class="tab-note">A desktop application written in Rust with the builders of <code>ferroui-view</code> (<code>stack_panel()</code>, <code>button()</code>) and a signal the controls follow, as in <a href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/HelloWorld.Builders"><code>samples/HelloWorld.Builders</code></a>.</p>
-              <ul class="tpl-files" aria-label="Files"><li>src/main.rs</li><li>src/main_view.rs</li></ul>
-              <div class="tpl-options">
-                <label class="opt"><span>Name</span><input type="text" value="my-app" data-name spellcheck="false" autocomplete="off"></label>
-                <label class="opt"><span>Theme</span><select data-define="theme" data-default="winui">
-                  <option value="winui">WinUI 3</option><option value="fluent">Fluent</option><option value="simple">Simple</option><option value="macos">macOS 26</option><option value="material">Material 3 Expressive</option>
-                </select></label>
-              </div>
-              <div class="code" data-label="the commands of the declarative template">
-                <div class="code-head"><span class="file term">Terminal</span><span class="lang">sh</span></div>
-<pre><code data-lang="sh" data-command>cargo generate --git https://github.com/FerroUI/templates declarative --name my-app
-cd my-app
-cargo run</code></pre>
-              </div>
-            </div>
-
-            <div class="tpl-panel card" role="tabpanel" id="tpl-rsx" aria-labelledby="tpl-tab-rsx" tabindex="0" hidden data-template="rsx" data-next="cd {name}|cargo run">
-              <h3>rsx <span class="badge rust">Project</span></h3>
-              <p class="tab-note">A desktop application with the React-like API: <code>rsx!</code> trees, <code>#[component]</code> functions, a signal, and a component that renders again when its hook state changes (<code>use_signal</code>, <code>#[component(rerender)]</code>), as in <a href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/HelloWorld.Macros"><code>samples/HelloWorld.Macros</code></a> and <a href="https://github.com/wieslawsoltes/FerroUI/tree/main/samples/HelloWorld.Hooks"><code>samples/HelloWorld.Hooks</code></a>.</p>
-              <ul class="tpl-files" aria-label="Files"><li>src/main.rs</li><li>src/components.rs</li></ul>
-              <div class="tpl-options">
-                <label class="opt"><span>Name</span><input type="text" value="my-app" data-name spellcheck="false" autocomplete="off"></label>
-                <label class="opt"><span>Theme</span><select data-define="theme" data-default="winui">
-                  <option value="winui">WinUI 3</option><option value="fluent">Fluent</option><option value="simple">Simple</option><option value="macos">macOS 26</option><option value="material">Material 3 Expressive</option>
-                </select></label>
-              </div>
-              <div class="code" data-label="the commands of the rsx template">
-                <div class="code-head"><span class="file term">Terminal</span><span class="lang">sh</span></div>
-<pre><code data-lang="sh" data-command>cargo generate --git https://github.com/FerroUI/templates rsx --name my-app
 cd my-app
 cargo run</code></pre>
               </div>
@@ -1040,7 +1363,7 @@ cargo generate --git https://github.com/FerroUI/templates styles --name AppStyle
           <label class="field">
             <span class="visually-hidden">Search the crates</span>
             <svg aria-hidden="true"><use href="#i-search"></use></svg>
-            <input id="crate-search" type="search" placeholder="Search crates, for example theme or xaml" autocomplete="off" spellcheck="false" aria-describedby="crate-count">
+            <input id="crate-search" type="search" placeholder="Search crates, for example view, theme or xaml" autocomplete="off" spellcheck="false" aria-describedby="crate-count">
           </label>
           <div class="chips" role="group" aria-label="Crate group">
             <button class="chip" type="button" data-group="all" aria-pressed="true">All</button>
@@ -1210,6 +1533,10 @@ cargo generate --git https://github.com/FerroUI/templates styles --name AppStyle
             <p>Within 0.5 the public API is kept; 0.6.0 may change it. The work towards the next version is published as previews, which may change any part of the public API.</p>
           </div>
           <div class="card reveal status-item">
+            <h3><span class="dot cool" aria-hidden="true"></span>Declarative UI: phases 0 to 6 built</h3>
+            <p>Builders, <code>rsx!</code>, signals, components with hooks, the reconciler, XAML interoperation, tools, performance and scale, and futures, error boundaries and a router; what React has that it does not have yet is listed in <a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui-react.md">declarative-ui-react.md</a>.</p>
+          </div>
+          <div class="card reveal status-item">
             <h3><span class="dot" aria-hidden="true"></span>Skia is the reference</h3>
             <p>Skia is the default and reference renderer, with HarfBuzz for text shaping.</p>
           </div>
@@ -1243,6 +1570,21 @@ cargo generate --git https://github.com/FerroUI/templates styles --name AppStyle
         </div>
       </div>
     </section>
+
+    <!-- Origins -->
+    <section id="origins" aria-labelledby="origins-title">
+      <div class="wrap">
+        <div class="section-head rise">
+          <span class="eyebrow">Origins</span>
+          <h2 id="origins-title">Where FerroUI comes from</h2>
+        </div>
+        <div class="card origins rise">
+          <p>FerroUI started as a port of a .NET UI framework to Rust, and its object model, styling, layout, input and composition architecture follow that design; the XAML compiler front end comes from XamlX. Applications, themes and markup written against that model carry over with their structure. Other parts are native ports of their own sources: the WinUI 3 controls, theme and composition API, Xaml.Behaviors, the TreeDataGrid, LiveCharts2, Rx.NET, DynamicData, ReactiveUI and Splat.</p>
+          <p>The declarative Rust layer, compiled <code>{x:Bind}</code>, theme trimming, the Material 3 and macOS 26 themes, the portable media stack, 3D and the performance work are FerroUI's own.</p>
+          <p>What follows a source is tracked against it, member by member, in <a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/TRACKING.md">TRACKING.md</a>, and every difference is recorded in <a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/DEVIATIONS.md">DEVIATIONS.md</a>. The projects and their licences are named in the <a href="https://github.com/wieslawsoltes/FerroUI#origins">Origins</a> section of the README and in <a href="https://github.com/wieslawsoltes/FerroUI/blob/main/NOTICE.md">NOTICE.md</a>.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -1253,7 +1595,7 @@ cargo generate --git https://github.com/FerroUI/templates styles --name AppStyle
             <img src="assets/img/logo.svg" width="28" height="28" alt="">
             <span>Ferro<span class="ui">UI</span></span>
           </a>
-          <p>A cross-platform UI framework for Rust, with XAML, a WinUI 3 theme and native platform backends.</p>
+          <p>A cross-platform UI framework for Rust: declarative Rust UI with signals and React-like components, or compiled XAML.</p>
         </div>
         <nav aria-labelledby="footer-project">
           <h2 id="footer-project">Project</h2>
@@ -1261,6 +1603,7 @@ cargo generate --git https://github.com/FerroUI/templates styles --name AppStyle
             <li><a href="https://github.com/wieslawsoltes/FerroUI">GitHub</a></li>
             <li><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/CHANGELOG.md">Changelog</a></li>
             <li><a href="https://github.com/wieslawsoltes/FerroUI#contributing">Contributing</a></li>
+            <li><a href="#origins">Origins</a></li>
             <li><a href="https://github.com/wieslawsoltes/FerroUI/issues">Issues</a></li>
           </ul>
         </nav>
@@ -1269,6 +1612,8 @@ cargo generate --git https://github.com/FerroUI/templates styles --name AppStyle
           <ul>
             <li><a href="https://github.com/wieslawsoltes/FerroUI#readme">README</a></li>
             <li><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui.md">Declarative UI</a></li>
+            <li><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/declarative-ui-react.md">Compared with React</a></li>
+            <li><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/porting/xaml.md">XAML</a></li>
             <li><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/mvvm.md">MVVM</a></li>
             <li><a href="https://github.com/wieslawsoltes/FerroUI/blob/main/docs/release.md">Releasing</a></li>
           </ul>
