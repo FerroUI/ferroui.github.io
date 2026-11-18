@@ -317,7 +317,7 @@ p { margin: 0; }
 .brand .ui { color: var(--rust); }
 
 .nav { margin-left: auto; display: flex; align-items: center; gap: 4px; }
-.nav-links { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; }
+.nav-links { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; white-space: nowrap; }
 .nav-links a {
   display: block;
   padding: 6px 12px;
@@ -356,7 +356,7 @@ p { margin: 0; }
 
 .menu-toggle { display: none; }
 
-@media (max-width: 899px) {
+@media (max-width: 1079px) {
   .menu-toggle { display: inline-grid; }
   .nav-links {
     position: absolute;
@@ -458,6 +458,7 @@ section { padding: 72px 0; }
   -webkit-background-clip: text; background-clip: text;
   color: transparent;
 }
+.hero h1 .nowrap { white-space: nowrap; }
 @media (forced-colors: active) { .hero h1 .accent { color: CanvasText; background: none; } }
 .hero .lead { font-size: 18px; color: var(--text-2); max-width: 600px; }
 .hero .lead strong { color: var(--text); font-weight: 600; }
@@ -528,6 +529,12 @@ section { padding: 72px 0; }
   .hero-visual { padding-bottom: 0; }
 }
 
+/* The two ways to write a view, below the hero */
+.hero-code { margin-top: 64px; }
+.hero-code-title { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+.hero-code .code { margin-bottom: 0; }
+@media (min-width: 960px) { .hero-code .split.two { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); } }
+
 /* Cards with Reveal */
 
 .card {
@@ -584,6 +591,18 @@ section { padding: 72px 0; }
 .feature .links { margin-top: auto; padding-top: 6px; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; }
 .feature .links a { color: var(--rust); font-weight: 600; text-decoration: none; }
 .feature .links a:hover { text-decoration: underline; }
+
+.samples-sub + .features:not(:last-child) { margin-bottom: 40px; }
+.declarative-code { margin-bottom: 28px; }
+.react-map { margin-top: 40px; }
+.react-map h3 { font-size: 20px; font-weight: 600; margin-bottom: 14px; }
+.react-map .table-wrap { margin-bottom: 14px; }
+.react-map table.data td:first-child { white-space: normal; }
+
+/* Origins */
+.origins { max-width: 860px; padding: 24px 26px; }
+.origins p { color: var(--text-2); font-size: 15px; }
+.origins p + p { margin-top: 12px; }
 
 /* Samples */
 
