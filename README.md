@@ -2,7 +2,7 @@
 
 The website of [FerroUI](https://github.com/wieslawsoltes/FerroUI), a cross-platform UI framework for
 Rust: declarative Rust UI with signals and React-like components, or compiled XAML.
-**https://ferroui.github.io/website/**
+**https://ferroui.com/**
 
 A static page: HTML, CSS and plain JavaScript, with no framework, no build step and no third-party
 requests. GitHub Pages publishes it from `main` through `.github/workflows/pages.yml`.
